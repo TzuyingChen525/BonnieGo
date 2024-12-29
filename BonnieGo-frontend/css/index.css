@@ -1,0 +1,144 @@
+/* main區域 */
+h2 {
+   font-size: 2.4rem;
+   padding-top: 10px;
+   padding-bottom: 10px;
+   text-align: center;
+   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+   margin-top: 10px;
+}
+
+/* Section 1 : Highlights*/
+
+.highlights {
+   /* padding: 0 70px 0 70px; */
+   margin-bottom: 40px;
+   max-width: 85%;
+
+}
+
+.carousel-caption {
+   background-color: rgba(255, 255, 255, 0.6);
+   border-radius: 50px;
+   backdrop-filter: blur(5.5px);
+   width: 250px;
+   height: 110px;
+}
+
+.carousel-caption h5 {
+   font-size: 1.8rem;
+   font-family: "PT Serif", serif;
+   font-weight: 700;
+   font-style: italic;
+   /* color: rgb(187, 28, 28); */
+}
+
+.carousel-caption p {
+   font-size: 1rem;
+   font-family: "PT Serif", serif;
+   font-weight: 510;
+   font-style: italic;
+   /* color: rgb(187, 28, 28); */
+   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.612); */
+}
+
+/* BonnieGo簡介區 */
+article {
+   background-image: radial-gradient(rgba(38, 55, 91, 0.594), rgba(139, 150, 168, 0.387), rgba(255, 255, 255, 0.7));
+   border-radius: 100px;
+   box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.18);
+
+   text-align: center;
+   padding: 40px 10px 40px 10px;
+   width: 40%;
+   margin: 50px auto 40px auto;
+
+   min-width: 450px;
+
+   position: relative;
+}
+
+article::after,
+article::before {
+   border-radius: 100px;
+   content: '';
+   position: absolute;
+   height: 100%;
+   width: 100%;
+
+   background-color: rgba(38, 55, 91, 0.2);
+
+   top: 50%;
+   left: 50%;
+   translate: -50% -50%;
+   z-index: -1;
+}
+
+article::before {
+   filter: blur(2rem);
+}
+
+
+.introduce {
+   font-weight: 400px;
+   font-size: 1.2rem;
+   letter-spacing: 1.7px;
+   color: #f8f9fae0;
+   text-shadow: 0.5px 0.5px 2px rgba(0, 0, 0, 0.3);
+}
+
+#introduceMain {
+   font-size: 1.2rem;
+   color: black;
+   text-shadow: none;
+   font-weight: 900;
+   letter-spacing: 1px;
+}
+
+h1 {
+   font-size: 45px;
+}
+
+
+/* 置頂按鈕樣式 */
+#topBtn {
+   position: fixed;
+   bottom: 30px;
+   right: 20px;
+   /* 初始隱藏 */
+   display: none;
+
+
+   background-image: radial-gradient(rgba(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(184, 186, 189, 0.483), rgba(38, 55, 91, 0.6));
+   /* background-image: radial-gradient(rgba(255, 255, 255), rgba(182, 189, 200, 0.387), rgba(79, 97, 134, 0.5), rgba(38, 55, 91, 0.6)); */
+   border-style: none;
+   border-radius: 50px;
+   padding: 12px 12px;
+   box-shadow: 1.5px 1.5px 3.5px rgba(0, 0, 0, 0.18);
+
+   cursor: pointer;
+   transition: opacity 0.3s ease;
+   z-index: 999;
+}
+
+#topBtn:hover {
+   /* background-image: radial-gradient(rgba(255, 255, 255), rgba(255, 255, 255, 0.8), rgba(184, 186, 189, 0.483), rgba(38, 55, 91, 0.6)); */
+   background-image: radial-gradient(rgba(255, 255, 255), rgba(182, 189, 200, 0.387), rgba(79, 97, 134, 0.35), rgba(38, 55, 91, 0.6));
+
+}
+
+/* 頁尾區域 */
+footer {
+   background-color: rgba(38, 55, 91, 0.594);
+   color: white;
+   font-size: 0.85rem;
+   text-align: center;
+   padding: 10px 0px 10px 0px;
+   margin-top: 65px;
+}
+
+/* #copyright {
+   font-size: 0.65rem;
+   color: white;
+   margin-top: 5px;
+} */

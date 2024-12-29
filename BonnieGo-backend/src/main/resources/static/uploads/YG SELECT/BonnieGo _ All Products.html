@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<!-- saved from url=(0038)http://127.0.0.1:5500/allProducts.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>BonnieGo | All Products</title>
+
+   <!-- Google Font -->
+   <link href="./BonnieGo _ All Products_files/css2" rel="stylesheet">
+
+   <!-- Bootstrap CSS -->
+   <link href="./BonnieGo _ All Products_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
+   <!-- Pure CSS -->
+   <link rel="stylesheet" href="./BonnieGo _ All Products_files/pure-min.css" integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++Ls" crossorigin="anonymous">
+
+   <!-- Custom CSS -->
+   <link rel="stylesheet" href="./BonnieGo _ All Products_files/header.css">
+   <link rel="stylesheet" href="./BonnieGo _ All Products_files/footer.css">
+   <link rel="stylesheet" href="./BonnieGo _ All Products_files/font.css">
+   <link rel="stylesheet" href="./BonnieGo _ All Products_files/all_products.css">
+</head>
+
+<body>
+
+   <!-- 文字活動推播區-->
+   <header class="advertisement py-2 px-4">
+      BonnieGo！幫你購買你想要的商品！
+   </header>
+
+   <!-- navbar:置頂重要功能區 -->
+   <nav id="mainNav" class="navbar navbar-expand-lg bg-body-tertiary sticky-top">
+      <!-- 網站logo(點擊回到首頁) -->
+      <a class="navbar-brand rubik-bubbles-regular" href="http://127.0.0.1:5500/index.html" id="mainLogo">BonnieGo</a>
+
+      <!-- menu按鈕 -->
+      <button class="navbar-toggler mx-3 collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-label="Toggle navigation" aria-expanded="false">
+         <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="navbar-collapse collapse" id="navbarSupportedContent" style="">
+         <!-- navbar內容 文字區 -->
+         <ul class="navbar-nav ">
+            <li class="nav-item">
+               <a class="nav-link nav-subpage my-0 mx-3" href="http://127.0.0.1:5500/allProducts.html">所有商品<br>All Products</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link nav-subpage my-0 mx-3" href="http://127.0.0.1:5500/customization.html">客製代購<br>Customization</a>
+            </li>
+
+            <li class="nav-item">
+               <a class="nav-link nav-subpage my-0 mx-3" href="http://127.0.0.1:5500/FAQs.html">常見問答<br>FAQs</a>
+            </li>
+         </ul>
+
+         <!-- navbar內容 icon區 -->
+         <ul class="navbar-nav">
+            <!-- 會員頁面(登入註冊/會員資料頁) -->
+            <li class="nav-item">
+               <button class="btn"><a href="http://127.0.0.1:5500/user.html"><svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="20px" viewBox="0 0 24 24" width="20px" fill="#5f6368">
+                        <g>
+                           <rect fill="none" height="24" width="24"></rect>
+                        </g>
+                        <g>
+                           <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 4c1.93 0 3.5 1.57 3.5 3.5S13.93 13 12 13s-3.5-1.57-3.5-3.5S10.07 6 12 6zm0 14c-2.03 0-4.43-.82-6.14-2.88C7.55 15.8 9.68 15 12 15s4.45.8 6.14 2.12C16.43 19.18 14.03 20 12 20z"></path>
+                        </g>
+                     </svg>
+                  </a>
+               </button>
+            </li>
+            <!-- 收藏商品(點擊開啟收藏商品sidebar) -->
+            <li class="nav-item nav-icon">
+               <button onclick="showfavoriteItemSidebar()" class="btn"><svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#5f6368">
+                     <path d="M0 0h24v24H0z" fill="none"></path>
+                     <path d="M16.5 3c-1.74 0-3.41.81-4.5 2.09C10.91 3.81 9.24 3 7.5 3 4.42 3 2 5.42 2 8.5c0 3.78 3.4 6.86 8.55 11.54L12 21.35l1.45-1.32C18.6 15.36 22 12.28 22 8.5 22 5.42 19.58 3 16.5 3zm-4.4 15.55l-.1.1-.1-.1C7.14 14.24 4 11.39 4 8.5 4 6.5 5.5 5 7.5 5c1.54 0 3.04.99 3.57 2.36h1.87C13.46 5.99 14.96 5 16.5 5c2 0 3.5 1.5 3.5 3.5 0 2.89-3.14 5.74-7.9 10.05z"></path>
+                  </svg>
+               </button>
+            </li>
+            <!-- 購物車 (點擊開啟購物車sidebar)-->
+            <li class="nav-item nav-icon" id="shoppingCartIcon">
+               <button onclick="showshoppingCartSidebar()" class="btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368">
+                     <path d="M280-80q-33 0-56.5-23.5T200-160q0-33 23.5-56.5T280-240q33 0 56.5 23.5T360-160q0 33-23.5 56.5T280-80Zm400 0q-33 0-56.5-23.5T600-160q0-33 23.5-56.5T680-240q33 0 56.5 23.5T760-160q0 33-23.5 56.5T680-80ZM246-720l96 200h280l110-200H246Zm-38-80h590q23 0 35 20.5t1 41.5L692-482q-11 20-29.5 31T622-440H324l-44 80h480v80H280q-45 0-68-39.5t-2-78.5l54-98-144-304H40v-80h130l38 80Zm134 280h280-280Z"></path>
+                  </svg>
+               </button>
+               <!-- 購物車計數 -->
+               <span class="" id="shoppingCartCount">1</span>
+            </li>
+         </ul>
+      </div>
+   </nav>
+
+   <!-- 購物車sidebar -->
+   <ul class="sidebar cart-container" id="shoppingCartSidebar">
+      <!-- 關閉符號 -->
+      <button onclick="hideshoppingCartSidebar()" id="closeIcon" class="btn"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path>
+         </svg></button>
+      <h4>
+         購物車
+      </h4>
+
+      <div class="sidebar-container">
+         <table class="sidebar-table pure-table pure-table-horizontal">
+            <thead>
+               <tr>
+                  <th>商品圖片</th>
+                  <th>商品名稱</th>
+                  <th>數量</th>
+                  <th>單價</th>
+                  <th>小計</th>
+                  <th>移至收藏</th>
+                  <th>移除商品</th>
+               </tr>
+            </thead>
+            <tbody id="cart-items"><p style="text-align: center; margin-top: 20px;">購物車是空的。</p></tbody>
+         </table>
+
+         <div class="sidebar-summary cart-total">
+            <p>總計: <strong id="cart-total">$380</strong></p>
+         </div>
+      </div>
+
+      <div class="sidebar-goto-btn cart-actions">
+         <!-- 關閉購物車 -->
+         <button class="btn btn-outline-dark" onclick="hideshoppingCartSidebar()">關閉購物車</button>
+         <!-- 前往收藏商品頁 -->
+         <button class="btn btn-outline-dark" onclick="hideshoppingCartSidebar();showfavoriteItemSidebar()">前往收藏商品</button>
+         <!-- 前往結帳頁面 -->
+         <button class="btn btn-dark"><a href="http://127.0.0.1:5500/pay.html" id="pay-page-link">前往結帳</a></button>
+      </div>
+   </ul>
+
+   <!-- 收藏商品sidebar -->
+   <ul class="sidebar" id="favoriteItemSidebar">
+      <!-- 關閉符號 -->
+      <button onclick="hidefavoriteItemSidebar()" id="closeIcon" class="btn"><svg xmlns="http://www.w3.org/2000/svg" height="30px" viewBox="0 -960 960 960" width="30px" fill="#5f6368">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"></path>
+         </svg></button>
+      <h4>
+         收藏商品
+      </h4>
+
+      <div class="sidebar-container">
+         <table class="sidebar-table pure-table pure-table-horizontal">
+            <thead>
+               <tr>
+                  <th>商品圖片</th>
+                  <th>商品名稱</th>
+                  <th>單價</th>
+                  <th>移除收藏</th>
+                  <th>移入購物車</th>
+               </tr>
+            </thead>
+            <tbody>
+         <tr data-id="13">
+            <td><img src="./BonnieGo _ All Products_files/abcc912a-f9c2-406e-84d8-b04286435355_1.jpg" alt="商品圖片" style="width: 50px; height: 50px;"></td>
+            <td>Post bag (Stitch Mocha)</td>
+            <td>2850</td>
+            <td>
+               <button onclick="removeFromFavorites(0)" class="btn remove-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368">
+                           <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q84 0 153 59t69 160q0 14-2 29.5t-6 31.5h-85q5-18 8-34t3-30q0-75-50-105.5T620-760q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm160-280v-80h320v80H600Z"></path>
+                        </svg>
+               </button>
+            </td>
+            <td>
+               <button onclick="moveToCart(0)" class="btn cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#5f6368">
+                           <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                           <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+                        </svg>
+               </button>
+            </td>
+         </tr>
+      
+         <tr data-id="14">
+            <td><img src="./BonnieGo _ All Products_files/f4ce0976-66f3-4215-b685-a409b25a6cb3_2.jpg" alt="商品圖片" style="width: 50px; height: 50px;"></td>
+            <td>Post pods (Stitch Mocha)</td>
+            <td>900</td>
+            <td>
+               <button onclick="removeFromFavorites(1)" class="btn remove-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 -960 960 960" width="20px" fill="#5f6368">
+                           <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q84 0 153 59t69 160q0 14-2 29.5t-6 31.5h-85q5-18 8-34t3-30q0-75-50-105.5T620-760q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm160-280v-80h320v80H600Z"></path>
+                        </svg>
+               </button>
+            </td>
+            <td>
+               <button onclick="moveToCart(1)" class="btn cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px" viewBox="0 0 24 24" width="20px" fill="#5f6368">
+                           <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                           <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+                        </svg>
+               </button>
+            </td>
+         </tr>
+      </tbody>
+         </table>
+      </div>
+
+      <div class="fav-sidebar-bottombtn sidebar-goto-btn">
+         <!-- 關閉收藏商品頁面 -->
+         <button class="btn btn-outline-dark" onclick="hidefavoriteItemSidebar()">關閉收藏商品</button>
+         <!-- 前往購物車頁面 -->
+         <button class="btn btn-dark" onclick="hidefavoriteItemSidebar();showshoppingCartSidebar()">前往購物車</button>
+      </div>
+   </ul>
+
+   <main>
+      <div class="container">
+         <!-- 左側商品分類欄 -->
+         <div class="category-sidebar">
+
+            <ul class="category-list">
+               <li><a href="http://127.0.0.1:5500/allProducts.html#" class="category-item" data-category="all">所有商品</a></li>
+               <hr>
+               <li><span class="dropdown-item-text">品牌</span></li>
+               <li><a class="dropdown-item category-item" href="http://127.0.0.1:5500/allProducts.html#" data-category="Stand Oil">Stand Oil</a></li>
+               <li><a class="dropdown-item category-item" href="http://127.0.0.1:5500/allProducts.html#" data-category="nonenon">nonenon</a></li>
+               <li><a class="dropdown-item category-item" href="http://127.0.0.1:5500/allProducts.html#" data-category="YG SELECT">YG SELECT</a></li>
+               <hr>
+               <li><span class="dropdown-item-text">類別</span></li>
+               <li><a class="dropdown-item category-item" href="http://127.0.0.1:5500/allProducts.html#" data-category="Bag">包包 Bag</a></li>
+               <li><a class="dropdown-item category-item" href="http://127.0.0.1:5500/allProducts.html#" data-category="Accessory">配飾 Accessory</a></li>
+               <li><a class="dropdown-item category-item" href="http://127.0.0.1:5500/allProducts.html#" data-category="Album">專輯 Album</a></li>
+            </ul>
+
+         </div>
+
+         <section>
+            <!-- 搜尋商品-->
+            <!-- <div class="searchForm">
+               <form class="d-flex" role="search">
+                  <input class="form-control" type="search" placeholder="輸入關鍵字搜尋商品" aria-label="Search"
+                     id="searchInput">
+                  <button class="btn btn-sm" type="button" id="searchBtn"><svg xmlns="http://www.w3.org/2000/svg"
+                        height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path
+                           d="M15.5 14h-.79l-.28-.27C15.41 12.59 16 11.11 16 9.5 16 5.91 13.09 3 9.5 3S3 5.91 3 9.5 5.91 16 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z" />
+                     </svg></button>
+               </form>
+            </div> -->
+
+            <!-- 商品排序 -->
+            <div class="category-text" id="category-filter">
+               <label for="sortSelect">商品排序：</label>
+               <select id="sortSelect" name="sortSelect">
+                  <option value="price-asc">價格：低到高</option>
+                  <option value="price-desc">價格：高到低</option>
+               </select>
+            </div>
+
+            <!-- 商品展示區域 -->
+            <div class="product-display">
+               <!-- 分類標題 -->
+               <h2 id="category-title">所有商品</h2>
+
+               <div class="product-list" id="product-list">
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/3d035f75-e1e1-4a0b-bda5-75d60c1447f7_LEEDAHYE CHARM BRACELET.jpg" alt="[HUSH] LEEDAHYE CHARM BRACELET">
+               <h3>[HUSH] LEEDAHYE CHARM BRACELET</h3>
+               <p class="price my-1">$380</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">[HUSH] LEEDAHYE CHARM BRACELET</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;22&#39;, 
+                     name: &#39;[HUSH] LEEDAHYE CHARM BRACELET&#39;, 
+                     price: 380, 
+                     imageUrl: &#39;http://localhost:8080/uploads/3d035f75-e1e1-4a0b-bda5-75d60c1447f7_LEEDAHYE CHARM BRACELET.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;22&#39;,name: &#39;[HUSH] LEEDAHYE CHARM BRACELET&#39;, price: 380, imageUrl: &#39;http://localhost:8080/uploads/3d035f75-e1e1-4a0b-bda5-75d60c1447f7_LEEDAHYE CHARM BRACELET.jpg&#39;, quantity: 1,stock:&#39;40&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/b4f83503-1f78-4562-94d9-fbd0b9f95f81_ROSÉ first studio album ‘rosie’ (JEWEL).jpg" alt="ROSÉ first studio album ‘rosie’ (JEWEL)">
+               <h3>ROSÉ first studio album ‘rosie’ (JEWEL)</h3>
+               <p class="price my-1">$400</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">142x124x10mm / 102g</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;19&#39;, 
+                     name: &#39;ROSÉ first studio album ‘rosie’ (JEWEL)&#39;, 
+                     price: 400, 
+                     imageUrl: &#39;http://localhost:8080/uploads/b4f83503-1f78-4562-94d9-fbd0b9f95f81_ROSÉ first studio album ‘rosie’ (JEWEL).jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;19&#39;,name: &#39;ROSÉ first studio album ‘rosie’ (JEWEL)&#39;, price: 400, imageUrl: &#39;http://localhost:8080/uploads/b4f83503-1f78-4562-94d9-fbd0b9f95f81_ROSÉ first studio album ‘rosie’ (JEWEL).jpg&#39;, quantity: 1,stock:&#39;400&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/1ccf364d-f689-4365-94d6-95c9e2a284c1_Rosé First Single Album -R-.jpg" alt="Rosé First Single Album -R-">
+               <h3>Rosé First Single Album -R-</h3>
+               <p class="price my-1">$420</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">Rosé First Single Album -R-</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;20&#39;, 
+                     name: &#39;Rosé First Single Album -R-&#39;, 
+                     price: 420, 
+                     imageUrl: &#39;http://localhost:8080/uploads/1ccf364d-f689-4365-94d6-95c9e2a284c1_Rosé First Single Album -R-.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;20&#39;,name: &#39;Rosé First Single Album -R-&#39;, price: 420, imageUrl: &#39;http://localhost:8080/uploads/1ccf364d-f689-4365-94d6-95c9e2a284c1_Rosé First Single Album -R-.jpg&#39;, quantity: 1,stock:&#39;300&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/83c881b8-8400-499a-8077-c2ca64f80f41_ROSÉ first studio album ‘rosie’ (KR Exclusive).jpg" alt="ROSÉ first studio album ‘rosie’ (KR Exclusive)">
+               <h3>ROSÉ first studio album ‘rosie’ (KR Exclusive)</h3>
+               <p class="price my-1">$700</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">303x300x16mm / 800g</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;18&#39;, 
+                     name: &#39;ROSÉ first studio album ‘rosie’ (KR Exclusive)&#39;, 
+                     price: 700, 
+                     imageUrl: &#39;http://localhost:8080/uploads/83c881b8-8400-499a-8077-c2ca64f80f41_ROSÉ first studio album ‘rosie’ (KR Exclusive).jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;18&#39;,name: &#39;ROSÉ first studio album ‘rosie’ (KR Exclusive)&#39;, price: 700, imageUrl: &#39;http://localhost:8080/uploads/83c881b8-8400-499a-8077-c2ca64f80f41_ROSÉ first studio album ‘rosie’ (KR Exclusive).jpg&#39;, quantity: 1,stock:&#39;300&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/9ca84488-7dc1-413e-9f18-d9e806f2c80f_Black Love RNG.jpg" alt="BLACK LOVE RNG">
+               <h3>BLACK LOVE RNG</h3>
+               <p class="price my-1">$750</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">Material - TIN ZINC &amp; STEEL / None nickel PLATED
+Size - Korean/Japanese Standard</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;10&#39;, 
+                     name: &#39;BLACK LOVE RNG&#39;, 
+                     price: 750, 
+                     imageUrl: &#39;http://localhost:8080/uploads/9ca84488-7dc1-413e-9f18-d9e806f2c80f_Black Love RNG.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;10&#39;,name: &#39;BLACK LOVE RNG&#39;, price: 750, imageUrl: &#39;http://localhost:8080/uploads/9ca84488-7dc1-413e-9f18-d9e806f2c80f_Black Love RNG.jpg&#39;, quantity: 1,stock:&#39;30&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/91ec5a7a-8aeb-4e94-a73b-2e9b4c6fd574_Big Bloom NEC.jpg" alt="BIG BLOOM NEC">
+               <h3>BIG BLOOM NEC</h3>
+               <p class="price my-1">$900</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">Material - TIN ZINC &amp; STEEL / None nickel PLATED
+Size - Korean/Japanese Standard</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;11&#39;, 
+                     name: &#39;BIG BLOOM NEC&#39;, 
+                     price: 900, 
+                     imageUrl: &#39;http://localhost:8080/uploads/91ec5a7a-8aeb-4e94-a73b-2e9b4c6fd574_Big Bloom NEC.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;11&#39;,name: &#39;BIG BLOOM NEC&#39;, price: 900, imageUrl: &#39;http://localhost:8080/uploads/91ec5a7a-8aeb-4e94-a73b-2e9b4c6fd574_Big Bloom NEC.jpg&#39;, quantity: 1,stock:&#39;25&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/f4ce0976-66f3-4215-b685-a409b25a6cb3_2.jpg" alt="Post pods (Stitch Mocha)">
+               <h3>Post pods (Stitch Mocha)</h3>
+               <p class="price my-1">$900</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">尺寸：6.8* 5.5* 2.3cm
+重量：30g
+材質：純素皮革
+製造地：中國/越南 
+</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;14&#39;, 
+                     name: &#39;Post pods (Stitch Mocha)&#39;, 
+                     price: 900, 
+                     imageUrl: &#39;http://localhost:8080/uploads/f4ce0976-66f3-4215-b685-a409b25a6cb3_2.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;14&#39;,name: &#39;Post pods (Stitch Mocha)&#39;, price: 900, imageUrl: &#39;http://localhost:8080/uploads/f4ce0976-66f3-4215-b685-a409b25a6cb3_2.jpg&#39;, quantity: 1,stock:&#39;50&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/d4b1cc13-6b09-4722-8c28-427f22a9ff2f_5.jpg" alt="Flower Pearl Necklace">
+               <h3>Flower Pearl Necklace</h3>
+               <p class="price my-1">$1000</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">鍊長 38~39 + 5 cm , 重量 13g , 材質：醫療鋼、淡水珍珠</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;12&#39;, 
+                     name: &#39;Flower Pearl Necklace&#39;, 
+                     price: 1000, 
+                     imageUrl: &#39;http://localhost:8080/uploads/d4b1cc13-6b09-4722-8c28-427f22a9ff2f_5.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;12&#39;,name: &#39;Flower Pearl Necklace&#39;, price: 1000, imageUrl: &#39;http://localhost:8080/uploads/d4b1cc13-6b09-4722-8c28-427f22a9ff2f_5.jpg&#39;, quantity: 1,stock:&#39;20&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/8d0e0a66-341e-453f-a0ff-f7a95ac862d0_3.jpg" alt="Oblong bag Mini (Stitch Black)">
+               <h3>Oblong bag Mini (Stitch Black)</h3>
+               <p class="price my-1">$2800</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">尺寸：24*20*12.5 cm
+重量：440g 
+把手高度: 31.5cm
+材質：純素皮革
+製造地：中國/越南</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;16&#39;, 
+                     name: &#39;Oblong bag Mini (Stitch Black)&#39;, 
+                     price: 2800, 
+                     imageUrl: &#39;http://localhost:8080/uploads/8d0e0a66-341e-453f-a0ff-f7a95ac862d0_3.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;16&#39;,name: &#39;Oblong bag Mini (Stitch Black)&#39;, price: 2800, imageUrl: &#39;http://localhost:8080/uploads/8d0e0a66-341e-453f-a0ff-f7a95ac862d0_3.jpg&#39;, quantity: 1,stock:&#39;150&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div>
+            <div class="product-item">
+               <img src="./BonnieGo _ All Products_files/abcc912a-f9c2-406e-84d8-b04286435355_1.jpg" alt="Post bag (Stitch Mocha)">
+               <h3>Post bag (Stitch Mocha)</h3>
+               <p class="price my-1">$2850</p>
+               <p class="description py-1 px-1" style="font-size:0.8rem;background-color:rgba(184, 186, 189, 0.2);border-radius:5px;height:70px;">尺寸：22.5*12.5*7.5 cm
+把手高度: 30cm
+重量：285g
+材質：純素皮革
+製造地： 中國 / 越南</p>
+               
+            <button class="wishlist-btn btn" onclick="addToFavorites({
+                     product_id: &#39;13&#39;, 
+                     name: &#39;Post bag (Stitch Mocha)&#39;, 
+                     price: 2850, 
+                     imageUrl: &#39;http://localhost:8080/uploads/abcc912a-f9c2-406e-84d8-b04286435355_1.jpg&#39;
+                     })">
+               <svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+               <path d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q81 0 136 45.5T831-680h-85q-18-40-53-60t-73-20q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm280-160v-120H600v-80h120v-120h80v120h120v80H800v120h-80Z"></path>
+               </svg>
+            </button>
+
+         <button class="add-to-cart-btn btn" onclick="addToCart({product_id:&#39;13&#39;,name: &#39;Post bag (Stitch Mocha)&#39;, price: 2850, imageUrl: &#39;http://localhost:8080/uploads/abcc912a-f9c2-406e-84d8-b04286435355_1.jpg&#39;, quantity: 1,stock:&#39;80&#39; })"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 0 24 24" width="24px" fill="#5f6368">
+                     <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none"></path>
+                     <path d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z"></path>
+         </svg></button>
+            </div></div>
+
+               <!-- 商品頁數-->
+               <div id="product-list"></div>
+               <div id="pagination" class="pagination"></div>
+            </div>
+
+
+         </section>
+
+      </div>
+   </main>
+
+   <!-- 置頂按鈕 -->
+   <button onclick="scrollToTop()" id="topBtn" style="display: block;"><svg xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#5f6368">
+         <path d="M160-760v-80h640v80H160Zm280 640v-408L336-424l-56-56 200-200 200 200-56 56-104-104v408h-80Z"></path>
+      </svg></button>
+
+   <!-- 頁尾 -->
+   <footer>
+      <div class="footer-content">
+         <div class="contact-us">
+            <div>聯絡我們 Contact Us</div>
+            <div> E-mail：bonniego@gmail.com</div>
+         </div>
+      </div>
+   </footer>
+
+
+   <!-- JavaScript -->
+   <script src="./BonnieGo _ All Products_files/bootstrap.bundle.min.js.下載" integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous"></script>
+
+   <script src="./BonnieGo _ All Products_files/backToTop.js.下載"></script>
+   <script src="./BonnieGo _ All Products_files/sidebar.js.下載"></script>
+   <script src="./BonnieGo _ All Products_files/allProducts.js.下載"></script>
+   <script src="./BonnieGo _ All Products_files/cart.js.下載"></script>
+   <script src="./BonnieGo _ All Products_files/favorites.js.下載"></script>
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

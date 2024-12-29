@@ -1,0 +1,84 @@
+.register-container {
+   background-color: white;
+   padding: 20px;
+   border-radius: 8px;
+   box-shadow: 0px 2px 6px rgba(0, 0, 0, 0.2);
+   width: 800px;
+   margin-top: 40px;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+   /* 表單內部縱向排列 */
+}
+
+.form-rows {
+   display: flex;
+   justify-content: space-between;
+   /* 讓兩個 span 並排 */
+   gap: 20px;
+   /* 增加間距 */
+}
+
+form span {
+   flex: 1;
+   /* 兩個 span 平均分配空間 */
+   width: 350px;
+}
+
+.register-container h2 {
+   margin-bottom: 30px;
+   color: #333;
+   font-size: 1.8rem;
+   text-align: center;
+}
+
+.register-container .form-group {
+   margin-bottom: 15px;
+}
+
+.register-container label {
+   display: block;
+   margin-bottom: 5px;
+   font-size: 1.1rem;
+   color: #555;
+}
+
+.register-container input {
+   width: 100%;
+   height: 35px;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   font-size: 0.9rem;
+   font-weight: 400;
+}
+
+.button-container {
+   margin-top: 10px;
+   margin-bottom: 10px;
+   margin-left: 650px;
+}
+
+#signup-btn {
+   font-size: 1.1rem;
+}
+
+#gender {
+   font-size: 0.9rem;
+   font-weight: 400;
+   color: #555;
+   border-radius: 3px;
+   height: 35px;
+}
+
+#gender option {
+   font-size: 0.85rem;
+   font-weight: 400;
+}
+
+#zip-code {
+   width: 130px;
+   margin-bottom: 5px;
+}

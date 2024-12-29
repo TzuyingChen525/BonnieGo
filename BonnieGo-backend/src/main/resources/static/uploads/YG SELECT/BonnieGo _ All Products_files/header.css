@@ -1,0 +1,186 @@
+* {
+   /* box-sizing: border-box; */
+   margin: auto;
+   padding: 0;
+
+   /* 預設英文字體 */
+   font-family: "PT Serif", serif;
+   font-weight: 700;
+   font-style: normal;
+   /* 預設中文字體 */
+   font-family: "Noto Serif TC", serif;
+   font-optical-sizing: auto;
+}
+
+/* header區廣告欄位 */
+.advertisement {
+   background-color: rgba(38, 55, 91, 0.594);
+   color: white;
+   font-size: 0.85rem;
+
+   display: flex;
+   align-items: center;
+   justify-content: flex-end;
+}
+
+/* navbar區域*/
+nav {
+   min-width: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-bottom: 20px;
+}
+
+#mainLogo {
+   font-size: 3rem;
+   /* margin: 0 40px 0 70px; */
+   margin-left: 65px;
+}
+
+
+.navbar {
+   font-size: 0.9rem;
+   text-align: center;
+
+   box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.18);
+   background-color: #ffffff;
+}
+
+.nav-link {
+   color: rgb(22, 22, 22);
+   font-weight: 900px;
+   text-shadow: 0.5px 0.5px 0.5px rgba(0, 0, 0, 0.1);
+}
+
+
+.nav-link:hover {
+   color: rgb(187, 28, 28);
+}
+
+/* 購物車按鈕和計數位置 */
+#shoppingCartIcon {
+   position: relative;
+}
+
+#shoppingCartCount {
+   position: absolute;
+   bottom: 3px;
+   /* 徽章相對於容器底部位置 */
+   right: 4px;
+   /* 徽章相對於容器右側位置 */
+   font-size: 10px;
+   color: white;
+   background-color: rgb(187, 28, 28);
+   width: 16px;
+   height: 16px;
+   border-radius: 50%;
+}
+
+/* 購物車&收藏商品sidebar */
+.sidebar {
+   font-size: 0.9rem;
+
+   position: fixed;
+   top: 0;
+   right: 0px;
+   z-index: 10000;
+
+   height: 100vh;
+   width: 100%;
+
+   background-color: rgba(255, 255, 255, 0.7);
+   backdrop-filter: blur(10px);
+   box-shadow: -3px 0px 5px rgba(0, 0, 0, 0.2);
+
+   display: flex;
+   flex-direction: column;
+   align-items: flex-end;
+   justify-content: flex-start;
+
+   padding: 20px;
+
+   transform: translateX(105%);
+   /*初始隱藏sidebar在畫面右方*/
+   transition: transform 1s ease;
+   /* 滑動效果 */
+
+   overflow-y: auto;
+   /* 當內容超出時，允許垂直滾動 */
+   box-sizing: border-box;
+   /* 確保 padding 不會影響寬度 */
+}
+
+.sidebar.active {
+   transform: translateX(0);
+   /* 位置調整為 0，讓側邊欄顯示 */
+}
+
+.sidebar li {
+   margin: 0;
+}
+
+
+/* sidebar title */
+h4 {
+   font-size: 1.3rem;
+   font-weight: 700;
+   color: rgb(22, 22, 22);
+   /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); */
+   /* text-decoration: underline; */
+   margin-bottom: 25px;
+}
+
+#closeIcon {
+   margin-bottom: 10px;
+}
+
+/* 購物車sidebar內部樣式 */
+.sidebar-table {
+   background-color: rgba(255, 255, 255, 0.5);
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+   min-width: 750px;
+}
+
+
+.sidebar-table th,
+.sidebar-table td {
+   font-size: 0.8rem;
+   text-align: center;
+}
+
+.sidebar-table img {
+   width: 80px;
+   border-radius: 4px;
+}
+
+.sidebar-table input[type="number"] {
+   width: 70px;
+   padding: 7px;
+   text-align: center;
+   border: 1px solid #ddd;
+   border-radius: 4px;
+}
+
+/* 購物車總結區域 */
+.sidebar-summary {
+   text-align: right;
+   font-size: 1.2em;
+   margin: 10px;
+}
+
+/* sidebar下方按鈕 */
+.sidebar-goto-btn button {
+   font-weight: bold;
+   margin: 0 25px 0 25px;
+}
+
+.fav-sidebar-bottombtn {
+   margin-top: 20px;
+}
+
+#pay-page-link {
+   text-decoration: none;
+   color: white;
+}
