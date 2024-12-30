@@ -105,11 +105,11 @@ async function moveToFavorites(index) {
       // 呼叫後端 API，將商品加入收藏
       await addToFavorites(item.product);
       // 從購物車中移除該商品
-      await removeFromCart(item.product.product_id);
+      // await removeFromCart(item.product.product_id);
 
    } catch (error) {
       console.error("移入收藏清單失敗:", error);
-      alert("移入收藏清單失敗：" + error.message);
+      // alert("移入收藏清單失敗：" + error.message);
    }
 }
 

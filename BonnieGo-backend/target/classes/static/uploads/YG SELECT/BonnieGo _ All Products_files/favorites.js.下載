@@ -1,0 +1,90 @@
+// 收藏商品的陣列
+let favoriteItems = [];
+try {
+   const savedFavorites = localStorage.getItem("favorites");
+   favoriteItems = savedFavorites ? JSON.parse(savedFavorites) : [];
+} catch (e) {
+   console.error("收藏清單讀取失敗，重置為空清單。", e);
+   favoriteItems = [];
+}
+
+// 更新收藏清單的 LocalStorage
+function saveFavoritesToLocalStorage() {
+   localStorage.setItem("favorites", JSON.stringify(favoriteItems));
+}
+
+// 加入收藏功能
+function addToFavorites(product) {
+   console.log(product);
+
+   if (!product.product_id) {
+      console.error("商品缺少 id，無法加入收藏！");
+      return;
+   }
+
+   if (!favoriteItems.some((item) => item.product_id === product.product_id)) {
+      favoriteItems.push(product);
+      alert("商品已加入收藏清單！");
+      saveFavoritesToLocalStorage();
+      renderFavorites();
+   } else {
+      alert("商品已在收藏清單中！");
+   }
+}
+
+// 渲染收藏商品於 Sidebar
+function renderFavorites() {
+   const sidebarContainer = document.querySelector("#favoriteItemSidebar tbody");
+   sidebarContainer.innerHTML = ""; // 清空現有內容
+
+   favoriteItems.forEach((item, index) => {
+      const row = `
+         <tr data-id="${item.product_id}">
+            <td><img src="${item.imageUrl}" alt="商品圖片" style="width: 50px; height: 50px;"></td>
+            <td>${item.name}</td>
+            <td>${item.price}</td>
+            <td>
+               <button onclick="removeFromFavorites(${index})" class="btn remove-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                           viewBox="0 -960 960 960" width="20px" fill="#5f6368">
+                           <path
+                              d="M440-501Zm0 381L313-234q-72-65-123.5-116t-85-96q-33.5-45-49-87T40-621q0-94 63-156.5T260-840q52 0 99 22t81 62q34-40 81-62t99-22q84 0 153 59t69 160q0 14-2 29.5t-6 31.5h-85q5-18 8-34t3-30q0-75-50-105.5T620-760q-51 0-88 27.5T463-660h-46q-31-45-70.5-72.5T260-760q-57 0-98.5 39.5T120-621q0 33 14 67t50 78.5q36 44.5 98 104T440-228q26-23 61-53t56-50l9 9 19.5 19.5L605-283l9 9q-22 20-56 49.5T498-172l-58 52Zm160-280v-80h320v80H600Z" />
+                        </svg>
+               </button>
+            </td>
+            <td>
+               <button onclick="moveToCart(${index})" class="btn cart-btn">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="20px"
+                           viewBox="0 0 24 24" width="20px" fill="#5f6368">
+                           <path d="M0 0h24v24H0zm18.31 6l-2.76 5z" fill="none" />
+                           <path
+                              d="M11 9h2V6h3V4h-3V1h-2v3H8v2h3v3zm-4 9c-1.1 0-1.99.9-1.99 2S5.9 22 7 22s2-.9 2-2-.9-2-2-2zm10 0c-1.1 0-1.99.9-1.99 2s.89 2 1.99 2 2-.9 2-2-.9-2-2-2zm-9.83-3.25l.03-.12.9-1.63h7.45c.75 0 1.41-.41 1.75-1.03l3.86-7.01L19.42 4h-.01l-1.1 2-2.76 5H8.53l-.13-.27L6.16 6l-.95-2-.94-2H1v2h2l3.6 7.59-1.35 2.45c-.16.28-.25.61-.25.96 0 1.1.9 2 2 2h12v-2H7.42c-.13 0-.25-.11-.25-.25z" />
+                        </svg>
+               </button>
+            </td>
+         </tr>
+      `;
+      sidebarContainer.insertAdjacentHTML("beforeend", row);
+   });
+}
+
+// 移除收藏功能
+function removeFromFavorites(index) {
+   favoriteItems.splice(index, 1); // 移除陣列中的該商品
+   // alert("商品已從收藏清單中移除！");
+   saveFavoritesToLocalStorage();
+   renderFavorites(); // 重新渲染收藏列表
+}
+
+// 移入購物車功能 (需整合購物車邏輯)
+function moveToCart(index) {
+   const item = favoriteItems[index];
+   console.log("將商品加入購物車:", item);
+   // 整合購物車邏輯
+   addToCart(item);
+   // 從收藏中移除
+   removeFromFavorites(index);
+}
+
+// 初次加載時渲染收藏列表
+renderFavorites();

@@ -1,0 +1,68 @@
+/* 內文英文字體 */
+.pt-serif-regular {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.pt-serif-bold {
+   font-family: "PT Serif", serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+.pt-serif-regular-italic {
+   font-family: "PT Serif", serif;
+   font-weight: 400;
+   font-style: italic;
+}
+
+.pt-serif-bold-italic {
+   font-family: "PT Serif", serif;
+   font-weight: 700;
+   font-style: italic;
+}
+
+
+/* 中標題英文字體 */
+.lobster-regular {
+   font-family: "Lobster", sans-serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* LOGO大標題字體 */
+.rubik-bubbles-regular {
+   font-family: "Rubik Bubbles", system-ui;
+   font-weight: 400;
+   font-style: normal;
+}
+
+/* LOGO大標題字體 */
+.rowdies-light {
+   font-family: "Rowdies", serif;
+   font-weight: 300;
+   font-style: normal;
+}
+
+.rowdies-regular {
+   font-family: "Rowdies", serif;
+   font-weight: 400;
+   font-style: normal;
+}
+
+.rowdies-bold {
+   font-family: "Rowdies", serif;
+   font-weight: 700;
+   font-style: normal;
+}
+
+/* 中文字體 */
+/* <uniquifier>: Use a unique and descriptive class name
+   <weight>: Use a value from 200 to 900 */
+.noto-serif-tc {
+   font-family: "Noto Serif TC", serif;
+   font-optical-sizing: auto;
+   font-weight: 400;
+   font-style: normal;
+}

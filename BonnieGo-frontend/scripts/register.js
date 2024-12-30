@@ -14,8 +14,8 @@ registerForm.addEventListener("submit", async (e) => {
       return;
    }
 
-   if (!password || password.length < 6 || password.length > 18) {
-      alert("密碼長度應為 6 到 18 個字");
+   if (!password || password.length < 5 || password.length > 18) {
+      alert("密碼長度應為 5 到 18 個字");
       return;
    }
 

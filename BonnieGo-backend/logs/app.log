@@ -11286,3 +11286,3864 @@
         p1_0.product_price 
     limit
         ?, ?
+2024-12-30T03:37:37.080+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:56:46.272+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T03:56:46.284+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T03:56:46.351+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:56:46.351+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:56:46.362+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:56:46.362+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:56:46.370+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:56:46.385+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:56:46.390+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:00.076+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    insert 
+    into
+        products
+        (product_brand, product_category, product_description, image_url, product_name, product_price, product_stock) 
+    values
+        (?, ?, ?, ?, ?, ?, ?)
+2024-12-30T03:58:00.118+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:58:01.714+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:01.714+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:58:01.718+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:58:01.718+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:01.731+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:01.732+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:58:01.737+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:32.960+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    where
+        p1_0.product_id=?
+2024-12-30T03:58:32.977+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    update
+        products 
+    set
+        product_brand=?,
+        product_category=?,
+        product_description=?,
+        image_url=?,
+        product_name=?,
+        product_price=?,
+        product_stock=? 
+    where
+        product_id=?
+2024-12-30T03:58:32.991+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:58:34.406+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:34.406+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:58:34.407+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:58:34.410+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:58:34.410+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:34.420+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:34.426+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:46.707+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    where
+        p1_0.product_id=?
+2024-12-30T03:58:46.716+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    delete 
+    from
+        products 
+    where
+        product_id=?
+2024-12-30T03:58:47.576+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:58:48.829+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:48.829+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:58:48.831+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:58:48.832+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:48.833+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:58:48.841+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:48.844+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:59.589+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:58:59.589+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:59.594+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:58:59.594+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:58:59.603+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:58:59.608+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:59:01.716+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:59:01.716+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:59:01.721+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:59:01.721+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:59:01.732+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:59:01.732+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:01.738+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:59:01.767+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:59:01.767+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:59:01.768+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T03:59:01.770+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:59:01.770+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:59:01.779+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:59:01.783+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:59:05.062+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T03:59:05.066+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T03:59:05.079+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T03:59:05.083+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0
+2024-12-30T03:59:05.083+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T03:59:05.101+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.105+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.108+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.109+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.111+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.113+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.115+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T03:59:05.130+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.139+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.141+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.144+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.146+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.148+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.150+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.152+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.154+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.156+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.158+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T03:59:05.160+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:01:40.894+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T04:01:40.898+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T04:01:40.945+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:01:40.945+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T04:01:40.950+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:01:40.950+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T04:01:40.951+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T04:01:40.958+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:01:40.962+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:03:13.275+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T04:03:13.281+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.email=?
+2024-12-30T04:03:13.286+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    insert 
+    into
+        user
+        (address, email, fullname, gender, password_hash, phone, role, salt, username) 
+    values
+        (?, ?, ?, ?, ?, ?, ?, ?, ?)
+2024-12-30T04:03:13.292+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    insert 
+    into
+        cart
+        (user_id) 
+    values
+        (?)
+2024-12-30T04:03:13.295+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    insert 
+    into
+        favorite
+        (product_id, user_id) 
+    values
+        (?, ?)
+2024-12-30T04:04:20.620+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T04:04:20.624+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T04:04:20.662+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T04:04:20.662+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:04:20.665+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T04:04:20.665+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T04:04:20.665+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:04:20.680+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:04:20.684+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:04:22.907+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:04:22.907+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T04:04:22.910+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:04:22.910+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T04:04:22.929+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0
+2024-12-30T04:04:22.932+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.937+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.941+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.943+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.945+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.947+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.948+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:22.955+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.959+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.961+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.965+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.967+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.970+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.973+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.976+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.978+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.979+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.981+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:22.984+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:25.686+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T04:04:25.686+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:04:25.687+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T04:04:25.688+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T04:04:25.688+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:04:25.699+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:04:25.701+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:04:36.534+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:04:36.534+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T04:04:36.537+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:04:36.537+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T04:04:36.545+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0
+2024-12-30T04:04:36.548+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.549+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.551+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.555+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.558+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.560+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.562+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:04:36.565+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.569+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.570+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.572+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.574+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.577+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.578+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.581+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.582+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.584+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.586+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:04:36.588+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.504+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T04:05:14.507+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T04:05:14.509+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T04:05:14.512+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T04:05:14.554+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0
+2024-12-30T04:05:14.555+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.558+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.560+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.565+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.570+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.572+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.575+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T04:05:14.583+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.585+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.589+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.591+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.593+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.595+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.597+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.600+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.606+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.609+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.613+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T04:05:14.615+08:00 DEBUG 21080 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:29:29.772+08:00  WARN 21080 --- [BonnieGo] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=5h3m42ms61µs200ns).
+2024-12-30T09:30:08.037+08:00  INFO 21080 --- [BonnieGo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-30T09:30:08.090+08:00  INFO 21080 --- [BonnieGo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-30T09:30:08.118+08:00  INFO 21080 --- [BonnieGo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T09:30:08.121+08:00  INFO 21080 --- [BonnieGo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-30T09:30:08.123+08:00  INFO 21080 --- [BonnieGo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2024-12-30T09:30:13.516+08:00  INFO 44932 --- [BonnieGo] [main] com.bonniego.BonnieGoApplication         : Starting BonnieGoApplication using Java 21.0.4 with PID 44932 (E:\Java  Lesson\BonnieGo\BonnieGo-backend\target\classes started by may45 in E:\Java  Lesson\BonnieGo\BonnieGo-backend)
+2024-12-30T09:30:13.517+08:00  INFO 44932 --- [BonnieGo] [main] com.bonniego.BonnieGoApplication         : No active profile set, falling back to 1 default profile: "default"
+2024-12-30T09:30:14.464+08:00  INFO 44932 --- [BonnieGo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2024-12-30T09:30:14.646+08:00  INFO 44932 --- [BonnieGo] [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 173 ms. Found 8 JPA repository interfaces.
+2024-12-30T09:30:15.324+08:00  INFO 44932 --- [BonnieGo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2024-12-30T09:30:15.341+08:00  INFO 44932 --- [BonnieGo] [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2024-12-30T09:30:15.341+08:00  INFO 44932 --- [BonnieGo] [main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.33]
+2024-12-30T09:30:15.413+08:00  INFO 44932 --- [BonnieGo] [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2024-12-30T09:30:15.414+08:00  INFO 44932 --- [BonnieGo] [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1853 ms
+2024-12-30T09:30:15.630+08:00  INFO 44932 --- [BonnieGo] [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2024-12-30T09:30:15.703+08:00  INFO 44932 --- [BonnieGo] [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.6.2.Final
+2024-12-30T09:30:15.749+08:00  INFO 44932 --- [BonnieGo] [main] o.h.c.internal.RegionFactoryInitiator    : HHH000026: Second-level cache disabled
+2024-12-30T09:30:16.116+08:00  INFO 44932 --- [BonnieGo] [main] o.s.o.j.p.SpringPersistenceUnitInfo      : No LoadTimeWeaver setup: ignoring JPA class transformer
+2024-12-30T09:30:16.143+08:00  INFO 44932 --- [BonnieGo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2024-12-30T09:30:16.385+08:00  INFO 44932 --- [BonnieGo] [main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@300bb303
+2024-12-30T09:30:16.386+08:00  INFO 44932 --- [BonnieGo] [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2024-12-30T09:30:16.487+08:00  INFO 44932 --- [BonnieGo] [main] org.hibernate.orm.connections.pooling    : HHH10001005: Database info:
+	Database JDBC URL [Connecting through datasource 'HikariDataSource (HikariPool-1)']
+	Database driver: undefined/unknown
+	Database version: 8.0.34
+	Autocommit mode: undefined/unknown
+	Isolation level: undefined/unknown
+	Minimum pool size: undefined/unknown
+	Maximum pool size: undefined/unknown
+2024-12-30T09:30:17.344+08:00  INFO 44932 --- [BonnieGo] [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000489: No JTA platform available (set 'hibernate.transaction.jta.platform' to enable JTA platform integration)
+2024-12-30T09:30:17.437+08:00  INFO 44932 --- [BonnieGo] [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T09:30:18.014+08:00  WARN 44932 --- [BonnieGo] [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2024-12-30T09:30:18.362+08:00  INFO 44932 --- [BonnieGo] [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path '/'
+2024-12-30T09:30:18.369+08:00  INFO 44932 --- [BonnieGo] [main] com.bonniego.BonnieGoApplication         : Started BonnieGoApplication in 5.443 seconds (process running for 6.198)
+2024-12-30T09:30:44.178+08:00  INFO 44932 --- [BonnieGo] [http-nio-8080-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2024-12-30T09:30:44.178+08:00  INFO 44932 --- [BonnieGo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2024-12-30T09:30:44.181+08:00  INFO 44932 --- [BonnieGo] [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2024-12-30T09:40:34.699+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T09:40:34.736+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T09:40:34.829+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T09:40:34.829+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T09:40:34.841+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T09:40:34.841+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T09:40:34.862+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T09:40:34.867+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T09:40:34.887+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T09:40:43.902+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T09:40:43.902+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T09:40:43.906+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T09:40:43.906+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T09:40:43.926+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0
+2024-12-30T09:40:43.950+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.957+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.961+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.963+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.967+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.971+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.974+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T09:40:43.993+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.004+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.008+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.011+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.013+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.015+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.018+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.021+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.024+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.025+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.027+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.030+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T09:40:44.771+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T09:40:44.771+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T09:40:44.773+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T09:40:44.775+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T09:40:44.775+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T09:40:44.790+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T09:40:44.794+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T09:55:13.454+08:00  WARN 44932 --- [BonnieGo] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m26s806ms565µs500ns).
+2024-12-30T10:31:30.325+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T10:31:30.332+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T10:31:30.374+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:31:30.380+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:31:30.389+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:31:30.395+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:31:30.401+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:31:30.402+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:31:30.405+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:31:34.945+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:31:34.945+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:31:34.949+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:31:34.950+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:31:34.952+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:31:34.960+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0 
+    where
+        o1_0.user_id=?
+2024-12-30T10:31:34.964+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:31:44.169+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:31:44.169+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:31:44.175+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:31:44.175+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:31:44.183+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:31:44.188+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:00.051+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:00.051+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:32:00.055+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:00.055+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:32:00.059+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T10:32:00.064+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:00.067+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:15.901+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:32:15.901+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:15.906+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:32:15.906+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:15.915+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:15.918+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-9] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:25.086+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:32:25.086+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:25.090+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-8] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:25.090+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:32:25.102+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:25.107+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:26.846+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:26.846+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:32:26.847+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:26.850+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:32:26.850+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:26.866+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:26.872+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:40.413+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T10:32:40.418+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-4] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.username=?
+2024-12-30T10:32:40.473+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:40.473+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:32:40.476+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-6] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:32:40.477+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-10] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:40.489+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-5] org.hibernate.SQL                        : 
+    select
+        p1_0.product_id,
+        p1_0.product_brand,
+        p1_0.product_category,
+        p1_0.product_description,
+        p1_0.image_url,
+        p1_0.product_name,
+        p1_0.product_price,
+        p1_0.product_stock 
+    from
+        products p1_0 
+    order by
+        p1_0.product_price 
+    limit
+        ?, ?
+2024-12-30T10:32:40.489+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:40.495+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-2] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:46.460+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        f1_0.id,
+        f1_0.product_id,
+        f1_0.user_id 
+    from
+        favorite f1_0 
+    where
+        f1_0.user_id=?
+2024-12-30T10:32:46.460+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        c1_0.id,
+        c1_0.user_id 
+    from
+        cart c1_0 
+    where
+        c1_0.user_id=?
+2024-12-30T10:32:46.466+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-7] org.hibernate.SQL                        : 
+    select
+        ci1_0.id,
+        ci1_0.cart_id,
+        ci1_0.product_id,
+        ci1_0.quantity 
+    from
+        cart_item ci1_0 
+    where
+        ci1_0.cart_id=?
+2024-12-30T10:32:46.467+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-3] org.hibernate.SQL                        : 
+    select
+        fi1_0.id,
+        fi1_0.favorite_id,
+        fi1_0.product_id 
+    from
+        favorite_item fi1_0 
+    where
+        fi1_0.favorite_id=?
+2024-12-30T10:32:46.477+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        o1_0.id,
+        o1_0.address,
+        o1_0.order_date,
+        o1_0.phone,
+        o1_0.recipient,
+        o1_0.status,
+        o1_0.user_id 
+    from
+        orders o1_0
+2024-12-30T10:32:46.480+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.484+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.487+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.490+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.493+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.495+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.497+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        u1_0.id,
+        u1_0.address,
+        u1_0.email,
+        u1_0.fullname,
+        u1_0.gender,
+        u1_0.password_hash,
+        u1_0.phone,
+        u1_0.role,
+        u1_0.salt,
+        u1_0.username 
+    from
+        user u1_0 
+    where
+        u1_0.id=?
+2024-12-30T10:32:46.502+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.505+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.510+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.513+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.516+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.520+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.522+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.525+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.528+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.530+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.534+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T10:32:46.536+08:00 DEBUG 44932 --- [BonnieGo] [http-nio-8080-exec-1] org.hibernate.SQL                        : 
+    select
+        pi1_0.order_id,
+        pi1_1.id,
+        pi1_1.image_url,
+        pi1_1.name,
+        pi1_1.quantity,
+        pi1_1.subtotal,
+        pi1_1.unit_price 
+    from
+        orders_product_items pi1_0 
+    join
+        product_item pi1_1 
+            on pi1_1.id=pi1_0.product_items_id 
+    where
+        pi1_0.order_id=?
+2024-12-30T13:49:41.973+08:00  WARN 44932 --- [BonnieGo] [HikariPool-1 housekeeper] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1h48m26s720ms169µs100ns).
+2024-12-30T13:53:05.064+08:00  INFO 44932 --- [BonnieGo] [SpringApplicationShutdownHook] o.s.b.w.e.tomcat.GracefulShutdown        : Commencing graceful shutdown. Waiting for active requests to complete
+2024-12-30T13:53:05.074+08:00  INFO 44932 --- [BonnieGo] [tomcat-shutdown] o.s.b.w.e.tomcat.GracefulShutdown        : Graceful shutdown complete
+2024-12-30T13:53:05.083+08:00  INFO 44932 --- [BonnieGo] [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2024-12-30T13:53:05.092+08:00  INFO 44932 --- [BonnieGo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2024-12-30T13:53:05.101+08:00  INFO 44932 --- [BonnieGo] [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
